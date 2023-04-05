@@ -2,10 +2,16 @@ package com.hamitmizrak.javase;
 
 public class _07_javase {
     //Class
-    //OOP
+    //O-O-P
     //inhertance
     //interface
     //abstract
+    //polymorphism
+
+    // overloading ?
+    // override nedir ?
+    // encapsulation: private
 
     //Threading !!!!
+
 }
