@@ -66,4 +66,18 @@ public class _05_javase {
         conditional4();
     }
 
+    /*
+    VKI: Kullanıcıdan öncelikle Bayan mı Erkek mi oludğunu öğrenceksiniz ?
+    klavye.nextLine();
+    Kadınlar için ideal kilo formülü:
+    Kadınlar için ideal kilo hesaplama formülü  45,5 + 2,3 x ( (Boy(cm)/2,54) – 60)
+
+    Erkekler için ideal kilo formülü:
+    Erkekler için ideal kilo hesaplama formülü  50 + 2,3 X ( (Boy(cm)/2,54) – 60)
+    */
+
+    /*
+    Kullanıcıdan aldığımız password ile kullanıcadn aldığımız repassword verisi birbirine eşit mi değil mi ?
+   */
+
 }
