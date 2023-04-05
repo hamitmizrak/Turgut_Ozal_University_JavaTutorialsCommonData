@@ -58,7 +58,9 @@ public class _01_Javase {
         int number8=random.nextInt(10)+1;
         System.out.println(number8);
 
-        //String
+
+
+
 
 
     }
