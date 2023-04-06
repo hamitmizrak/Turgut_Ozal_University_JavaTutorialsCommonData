@@ -1,0 +1,108 @@
+/* comment */
+/* h2{
+    color:brown;
+}
+#h2_id{
+    background-color: black;
+}
+
+.h2_class{
+    padding:2rem;
+} 
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover{
+    opacity: 0.8;
+    transition: 2s all;
+}
+
+#div_id{
+    border:1px solid blue;
+    margin-top:10px;
+    width: 400px;
+    height: 25rem;
+}
+
+/* #div_id:hover{
+    cursor: pointer;
+    width: 800px;
+} */
+
+/*
+#param_id2{
+    color:red;
+    color:#000;
+    color:#4d4a4a;
+    color:rgb(0,0,0);
+    color:rgba(255, 255, 255, 0.8);
+    background-color: black;
+    padding:30px; 
+    padding-top:30px;
+    padding-right:30px;
+    padding-bottom:30px;
+    padding-left:30px;
+    padding:10px 40px;
+    margin:4px auto;
+} */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50% 50%;
+}
+
+div {
+    border: 1px solid blue;
+    width: 100%;
+    float:left;
+}
+
+/*RD:Responsive Design*/
+@media screen and (min-width:1px) {
+    div {
+        width: 100%;
+        float:left;
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width:600px) {
+    div {
+        width: 50%;
+        float:left;
+        background-color: rgb(24, 27, 175);
+    }
+}
+
+@media screen and (min-width:900px) {
+    div {
+        width: 33%;
+        float:left;
+        background-color: rgb(104, 175, 24);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    div {
+        width: 25%;
+        float:left;
+        background-color: rgb(183, 224, 180);
+    }
+}
