@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Css3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <!-- start code -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalId">Register</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+      </div>
+    </nav>
+
+  
+
+    <br><br><br>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="../images/cup-of-coffee-1280537_1920.jpg" class="w-100 d-block" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/coffee-171653_1920.jpg" class="w-100 d-block" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/cup-of-coffee-1280537_1920.jpg" class="w-100 d-block" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="#">Main</a>
+        <a class="breadcrumb-item" href="#">Sub</a>
+        <span class="breadcrumb-item active" aria-current="page">Active</span>
+    </nav>
+
+    <div class="alert alert-primary" role="alert">
+        <strong>Alert Heading</strong> Some Word
+    </div>
+
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="spinner-grow text-primary spinner-border-lg"
+            role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <img class="card-img-top" src="../images/cup-of-coffee-1280537_1920.jpg" alt="Title">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            This is the first item's accordion body.
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Modal trigger button -->
+ 
+   
+   <!-- Modal Body -->
+   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+   <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Body
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <nav aria-label="Page navigation">
+     <ul class="pagination    ">
+       <li class="page-item disabled">
+         <a class="page-link" href="#" aria-label="Previous">
+           <span aria-hidden="true">&laquo;</span>
+         </a>
+       </li>
+       <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+       <li class="page-item"><a class="page-link" href="#">2</a></li>
+       <li class="page-item"><a class="page-link" href="#">3</a></li>
+       <li class="page-item">
+         <a class="page-link" href="#" aria-label="Next">
+           <span aria-hidden="true">&raquo;</span>
+         </a>
+       </li>
+     </ul>
+   </nav>
+   
+   
+   <!-- Optional: Place to the bottom of scripts -->
+   <script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+   
+   </script>
+    
+
+    <h1 class="text-primary">Merhabalar Lorem ipsum dolor sit.</h1>
+<p class="h1">paragraf</p>
+<p class="h2">paragraf</p>
+<p class="h3">paragraf</p>
+<p class="h4">paragraf</p>
+<p class="h5">paragraf</p>
+<p class="h6">paragraf</p>
+<hr>
+<p class="display-1 text-info bg-dark m-5 p-3 border border-warning rounded-4" style="color:orange!important;">display</p>
+<p class="display-2">display</p>
+<p class="display-3">display</p>
+<p class="display-6">display</p>
+
+<button class="btn btn-outline-primary">Click me !</button>
+
+<div class="bg-dark text-white mt-3 me-3 mb-4 ms-3 w-50"><p>Lorem ipsum dolor sit.</p></div>
+
+<img src="../images/coffee-171653_1920.jpg" alt=""  class="w-75 img-fluid mt-3 rounded-circle img-thumbnail">
+
+    <!-- end code -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+</html>
