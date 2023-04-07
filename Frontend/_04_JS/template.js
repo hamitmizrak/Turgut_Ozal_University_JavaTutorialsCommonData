@@ -319,5 +319,13 @@ let object = () => {
 }
 object()
 
+//Date
+document.writeln("<br/>")
+let date = () => {
+    let value=new Date().getFullYear();
+    console.log(value)
+}
+date()
+
 
 
