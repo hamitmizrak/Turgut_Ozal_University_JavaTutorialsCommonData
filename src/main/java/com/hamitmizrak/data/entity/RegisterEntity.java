@@ -41,19 +41,12 @@ public class RegisterEntity extends BaseEntity implements Serializable, UserDeta
      @JsonIgnore // bu field json görünmesini sağlamamak için
     private String passwd;
 
-    @Column(name = "is_check", columnDefinition = "boolean default false")
-    private String check;
-
-    @Column(name = "image")
-    private String image;
 
     //Constructor
-    public RegisterEntity(String uname, String email, String passwd, String check,String image) {
+    public RegisterEntity(String uname, String email, String passwd) {
         this.uname = uname;
         this.email = email;
         this.passwd = passwd;
-        this.check = check;
-        this.image = image;
     }
 
     /////////////////////////////////////////////////

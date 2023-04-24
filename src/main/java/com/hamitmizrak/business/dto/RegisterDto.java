@@ -29,6 +29,7 @@ public class RegisterDto implements Serializable {
     // ID
     private Long id;
 
+
     // USERNAME
     @NotNull(message = "{register.username.validation.constraints.NotNull.message}")
     private String uname;
@@ -50,14 +51,10 @@ public class RegisterDto implements Serializable {
     private String passwd;
 
     // Kullanıcı aktif mi pasif mi
-    private String check;
-    private String image;
 
     // Sistem tarihi almak
     private Date createdDate;
 
-    //Object Pageable
-    private Object object;
 
     //UserDetails için
     private Collection<? extends GrantedAuthority> getAuthorities;
@@ -67,12 +64,10 @@ public class RegisterDto implements Serializable {
     private boolean isEnabled;
 
     //Constructor
-    public RegisterDto(String uname, String email, String passwd, String check, String image) {
+    public RegisterDto(String uname, String email, String passwd) {
         this.uname = uname;
-        this.email = email;
         this.passwd = passwd;
-        this.check = check;
-        this.image = image;
+        this.email = email;
     }
 
 }
