@@ -1,4 +1,4 @@
-package com.hamitmizrak.oop.interfacex;
+package com.hamitmizrak.javase_tutorials.oop.interfacex;
 
 public class Deneme implements ICommon{
     @Override

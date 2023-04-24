@@ -1,7 +1,6 @@
-package com.hamitmizrak.oop.abstractx;
+package com.hamitmizrak.javase_tutorials.oop.abstractx;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

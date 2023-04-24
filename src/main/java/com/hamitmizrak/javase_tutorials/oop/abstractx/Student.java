@@ -1,7 +1,6 @@
-package com.hamitmizrak.oop.abstractx;
+package com.hamitmizrak.javase_tutorials.oop.abstractx;
 
-
-public class Teacher  extends Person {
+public class Student extends Person {
     @Override
     public void deneme(String name) {
         super.deneme(name);
@@ -9,6 +8,6 @@ public class Teacher  extends Person {
 
     @Override
     public void govdesizMethod(int number) {
-        System.out.println("Teacher: "+number);
+        System.out.println("Student: "+number);
     }
 }

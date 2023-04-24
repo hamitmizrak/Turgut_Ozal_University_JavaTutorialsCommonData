@@ -1,4 +1,4 @@
-package com.hamitmizrak.oop.inheritancex;
+package com.hamitmizrak.javase_tutorials.oop.inheritancex;
 
 
 public class Teacher  extends  Person{

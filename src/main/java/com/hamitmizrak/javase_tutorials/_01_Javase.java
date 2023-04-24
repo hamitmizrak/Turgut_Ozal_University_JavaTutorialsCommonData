@@ -1,7 +1,6 @@
-package com.hamitmizrak.javase;
+package com.hamitmizrak.javase_tutorials;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class _01_Javase {
     public static void main(String[] args) {

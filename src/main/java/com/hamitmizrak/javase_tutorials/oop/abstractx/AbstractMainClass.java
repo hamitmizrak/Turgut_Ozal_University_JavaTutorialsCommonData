@@ -1,10 +1,10 @@
-package com.hamitmizrak.oop.inheritancex;
+package com.hamitmizrak.javase_tutorials.oop.abstractx;
 
-public class InheritanceMainClass {
+public class AbstractMainClass {
     public static void main(String[] args) {
 
         //Person
-        Person person = new Person();
+        Person person = new Student();
         person.setId(1L);
         person.setUsername("Person adı-1");
         person.setSurname("Person soyadı-1");
@@ -16,7 +16,6 @@ public class InheritanceMainClass {
         student.setUsername("öğrenci adı-1");
         student.setSurname("öğrenci soyadı-1");
         student.deneme("stu");
-        student.setUnicodeCharacter("unicode 441");
         System.out.println(student);
 
         //Teacher

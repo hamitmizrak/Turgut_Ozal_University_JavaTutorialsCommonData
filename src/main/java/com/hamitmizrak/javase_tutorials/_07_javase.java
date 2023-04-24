@@ -1,4 +1,4 @@
-package com.hamitmizrak.javase;
+package com.hamitmizrak.javase_tutorials;
 
 public class _07_javase {
     //Class
