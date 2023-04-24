@@ -22,6 +22,11 @@ public class JavaTutorialsCommonDataApplication {
 
     //PSVM
     public static void main(String[] args) {
+
+        // devtools active isActive
+        // System.setProperty("spring.devtools.restart.enabled","true");
+
+
         //Disables headless JOptionPane
         System.setProperty("java.awt.headless", "false");
 

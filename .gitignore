@@ -1,7 +1,7 @@
 # special data
 log
 memory_persist
-frontend/node_modules
+blog/node_modules
 
 HELP.md
 target/
