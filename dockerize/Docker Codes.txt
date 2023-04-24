@@ -1,0 +1,4 @@
+-- maven
+./mvnw clean install -DskipTest
+
+docker-compose up -d
