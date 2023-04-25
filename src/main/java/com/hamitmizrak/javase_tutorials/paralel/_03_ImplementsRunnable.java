@@ -1,5 +1,6 @@
 package com.hamitmizrak.javase_tutorials.paralel;
 
+// Eğer extends hakkını başka class kullanmışsa biz o zaman implements kullacağız
 public class _03_ImplementsRunnable extends ThreadBase implements  Runnable{
 
     //constructor
