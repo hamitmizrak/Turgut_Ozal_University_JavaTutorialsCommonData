@@ -13,7 +13,6 @@ public class _05_AnonymousThread  {
     private String theadName;
 
 
-
     // Anonymous thread
     public void anonymousMethod() {
         _05_AnonymousThread anonymousThread=new _05_AnonymousThread("Thread-1");
@@ -55,6 +54,7 @@ public class _05_AnonymousThread  {
     }
 
 
+    // PSVM 1170
     public static void main(String[] args) {
         _05_AnonymousThread anonymousThread = new _05_AnonymousThread();
         //anonymousThread.anonymousMethod();
