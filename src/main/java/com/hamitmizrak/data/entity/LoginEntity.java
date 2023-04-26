@@ -1,4 +1,4 @@
-package com.hamitmizrak.springboot._2_SpringDATA;
+package com.hamitmizrak.data.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -20,17 +20,8 @@ import java.util.Date;
 
 @Entity
 @Table(name = "login")
-public class LoginEntity implements Serializable {
+public class LoginEntity extends BaseEntity implements Serializable {
     public static final Long serialVersionUID=1L;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "created_date")
-    @CreationTimestamp
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date createdDate;
 
     private String name;
     private String surname;
@@ -44,6 +35,4 @@ public class LoginEntity implements Serializable {
     //Database eklemek istemediğimiz özellikleri
     @Transient
     private String specialData;
-
-
 }

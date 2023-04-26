@@ -1,5 +1,6 @@
-package com.hamitmizrak.springboot._2_SpringDATA;
+package com.hamitmizrak.data.repository;
 
+import com.hamitmizrak.data.entity.LoginEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

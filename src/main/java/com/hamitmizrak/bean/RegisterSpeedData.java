@@ -1,5 +1,7 @@
-package com.hamitmizrak.springboot._2_SpringDATA;
+package com.hamitmizrak.bean;
 
+import com.hamitmizrak.data.entity.LoginEntity;
+import com.hamitmizrak.data.repository.ILoginRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
