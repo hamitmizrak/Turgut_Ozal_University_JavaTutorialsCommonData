@@ -1,7 +1,5 @@
-package com.hamitmizrak.bean;
+package com.hamitmizrak.springboot._2_SpringDATA;
 
-import com.hamitmizrak.data.entity.LoginEntity;
-import com.hamitmizrak.data.repository.ILoginRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -12,23 +10,32 @@ import java.util.UUID;
 // @RequiredArgsConstructor
 
 
+public class LoginSpeedData {}
+
+/*
 @RequiredArgsConstructor
 @Configuration
-public class RegisterSpeedData {
+public class LoginSpeedData {
 
     // 1.YOL
 
+*/
 /* @Autowired
    private IRegisterRepository repository;*//*
+*/
+/*
 
 
     //2.YOL
-    */
+    *//*
+
+*/
 /*private IRegisterRepository repository;
     @Autowired
     public RegisterSpeedData(IRegisterRepository repository) {
         this.repository = repository;
-    }*/
+    }*//*
+
 
 
     //3.YOL
@@ -51,3 +58,4 @@ public class RegisterSpeedData {
     } //end CommandLineRunner
 } // end RegisterSpeedData
 
+*/

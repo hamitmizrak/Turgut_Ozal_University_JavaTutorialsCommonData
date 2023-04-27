@@ -1,5 +1,6 @@
-package com.hamitmizrak.data.entity;
+package com.hamitmizrak.springboot._2_SpringDATA;
 
+import com.hamitmizrak.data.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,11 +13,17 @@ import java.io.Serializable;
 import java.util.Date;
 
 // LOMBOK
+/*
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Log4j2
+*/
+
+
+public class LoginEntity{}
+/*
 
 @Entity
 @Table(name = "login")
@@ -36,3 +43,4 @@ public class LoginEntity extends BaseEntity implements Serializable {
     @Transient
     private String specialData;
 }
+*/
