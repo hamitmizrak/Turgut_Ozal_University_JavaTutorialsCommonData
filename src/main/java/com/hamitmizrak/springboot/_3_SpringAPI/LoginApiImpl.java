@@ -1,4 +1,4 @@
-package com.hamitmizrak.controller.api;
+package com.hamitmizrak.springboot._3_SpringAPI;
 import com.hamitmizrak.springboot.dto.RegisterDto;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.ResponseEntity;
