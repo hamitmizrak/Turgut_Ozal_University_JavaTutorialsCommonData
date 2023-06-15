@@ -77,7 +77,7 @@ public class ParallelService extends Thread{
 
         // 2.Thread
         ParallelService parallelService2=new ParallelService();
-        parallelService2.fileIouserSecretInformation();// fileIouserDataInformation
+        parallelService2.fileIouserSecretInformation();// fileIouserSecretInformation
 
         parallelService1.start();
         parallelService1.join();
