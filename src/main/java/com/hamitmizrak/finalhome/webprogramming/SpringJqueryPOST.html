@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up Form</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- jquery ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- External CSS-->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<div class="h-100 d-flex align-items-center justify-content-center">
+    <div class="container form-wrapper rounded-5 overflow-hidden">
+        <div class="signup-form py-3 row align-items-center justify-content-center">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-6">
+                <!-- FORM -->
+                <form class="signup-form py-3 row align-items-center justify-content-center" id="myFormId">
+                    <h1 class="mb-4 text-center fw-bold text-break">JQUERY POST / SPRING API</h1>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="d-flex">
+                                    <i class="social-icon fab fa-facebook-f border border-secondary pt-3 rounded-circle me-4"></i>
+                                    <i class="social-icon fa-brands fa-google border border-secondary pt-3 rounded-circle me-4"></i>
+                                    <i class="social-icon fa-sharp fa-solid fa-y border border-secondary pt-3 rounded-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="mb-4">or use your email address:</p>
+                        </div>
+
+                        <div class="col-md-12 mb-4">
+                            <div class="form-group">
+                                <input
+                                        type="email"
+                                        class="fs-3 border-0 rounded-pill px-5 py-3 form-input w-100"
+                                        id="form_email"
+                                        placeholder="Email"/>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mb-4">
+                            <div class="form-group">
+                                <input
+                                        type="password"
+                                        class="fs-3 border-0 rounded-pill px-5 py-3 form-input w-100"
+                                        id="form_password"
+                                        placeholder="Password"/>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="text-white border-0 rounded-pill fs-2 py-3 mb-5">CREATE ACCOUNT
+                        </button>
+                        <p> Already have an account? <a href="#" class="register-link fw-bold">Sign In</a></p>
+                    </div>
+                </form>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">jQuery POST</h4>
+                        <p id="feedback">Boş ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FORM JQUERY POST -->
+<!-- GET http://localhost:4444/api/v1/jquery/get
+$.get(URL,callbackFunction) -->
+
+<!-- POST  http://localhost:4444/api/v1/jquery/post const URL = "http://localhost:4444/api/v1/jquery/post";
+$.post(URL,formData,callbackFunction) -->
+<script>
+    $(document).ready(function () {
+        //SUBMIT
+        $("#myFormId").submit(function (event) {
+            event.preventDefault();
+            let email, password;
+            email = $("#form_email").val();
+            alert(email);
+            password = $("#form_password").val();
+            alert(password);
+            ajax_submit(email,password);
+        }); // end form
+
+        // AJAX
+        let ajax_submit=(emailValue,passwordValue)=>{
+            //DTO
+            const JqueryDto={
+                email:emailValue,
+                passwd:passwordValue,
+            };
+
+            //Ajax
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: "http://localhost:4444/api/v1/jquery/post",
+                data: JSON.stringify(JqueryDto),
+                dataType: 'json',
+                cache: false,
+                timeout: 600000,
+                success: function(data) {
+                    $("#feedback").html('Response: ' + JSON.stringify(data) );
+                    if (data.status == 'OK'){
+                        alert("Tamamdır");
+                    }
+                },
+                error: function (text) {
+                    $("#feedback").html('Error: ' + text.status);
+                }
+            }); // end Ajax
+        }
+    }); //end ready
+</script>
+
+</body>
+</html>

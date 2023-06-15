@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 65%;
+}
+
+.form-wrapper {
+  background-color: #eee;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.signup-form {
+  transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.signup-form h1 {
+  font-size: 4rem;
+  color: #1f2321;
+}
+
+.signup-form p {
+  font-size: 1.8rem;
+  color: #555;
+}
+.signup-form button {
+  background: linear-gradient(109.6deg, rgb(247, 108, 243) 11.2%, rgb(173, 64, 254) 100.2%);
+}
+.register-link {
+  text-decoration: none;
+  color: purple;
+}
+.social-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.form-input {
+  background-color: #ddd;
+}
+
+.fa-facebook-f {
+  color: #3b5998 !important;
+}
+.fa-google {
+  color: #db4a39 !important;
+}
+.fa-y {
+  color: #720e9e !important;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
